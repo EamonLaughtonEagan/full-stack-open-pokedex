@@ -22,3 +22,13 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello World"
+  date_job:
+    runs-on: ubuntu-20.04
+    steps:
+    - name: current date
+      run: date
+  list_job:
+    runs-on: ubuntu-20.04
+    steps:
+    - name: list directory
+      run: ls -lai
